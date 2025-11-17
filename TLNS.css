@@ -1,0 +1,646 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.customizeView{
+    position: relative;
+    width: 99%;
+    min-width: 1200px;
+    margin:0 auto;
+}
+.topCatch{
+    display: flex;
+    width:1200px;
+    margin:30px auto;
+}
+.topCatch .logo img{
+    height:64px;
+}
+.topCatch div{
+    width:50%;
+}
+.topCatch div p{
+    text-align: center;
+}
+.slider{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.topfirstview{
+    min-width: 1200px;
+    height:1125px;
+}
+#wrap{
+    width: 1200px;
+    margin:20 auto;
+}
+.main{
+
+    width:100%;
+    margin:20 auto;
+}
+@media screen{ /*and (max-width: 2000px){ */
+    .slider{
+        width: 100%;
+        height: 100%;
+        margin:0 auto;
+    }
+    .img-01, .img-02, .img-03{
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin:0 auto;
+    }
+    .img-01{
+        background-image: url('https://tla-bi.github.io/TLNS/TOP_slider_1.jpg');
+        animation: slide-animation-01 24s infinite;
+    }
+    .img-02{
+        background-image: url('https://tla-bi.github.io/TLNS/TOP_slider_2.jpg');
+        animation: slide-animation-02 24s infinite;
+    }
+    .img-03{
+        background-image: url('https://tla-bi.github.io/TLNS/TOP_slider_3.jpg');
+        animation: slide-animation-03 24s infinite;
+    }
+    @keyframes slide-animation-01 {
+        0% {opacity: 1; transform: scale(1.0);}
+        30% {opacity: 1;}
+        40% {opacity: 0; transform: scale(1.15);}
+        90% {opacity: 0}
+        100% {opacity: 1; transform: scale(1.0);}
+    }
+    @keyframes slide-animation-02 {
+        0% {opacity: 0;}
+        30% {opacity: 0; transform: scale(1.1);}
+        40% {opacity: 1;}
+        60% {opacity: 1;}
+        70% {opacity: 0; transform: scale(1.0);}
+        100% {opacity: 0;}
+    }
+    @keyframes slide-animation-03 {
+        0% {opacity: 0;}
+        60% {opacity: 0;  transform: scale(1.0);}
+        70% {opacity: 1;}
+        90% {opacity: 1;}
+        100% {opacity: 0; transform: scale(1.1);}
+    }
+}
+.msg{
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.msg-01, .msg-02{
+    text-shadow: 2px 2px 3px #000, -1px -1px 3px #000;
+}
+.img-03.cover::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+}
+.msg-03{
+    z-index:1;
+}
+
+
+.contents p{
+    text-align: center;
+}
+.en{
+    font-size: 50px;
+    /* display: block; */
+}
+.ja{
+    font-size: 15px;
+    display: block;
+}
+.contents span{
+    text-align: center;
+    display:block;
+}
+.contents .ttl1 .en::first-letter{
+    color:red;
+}
+.contents .ttl2{
+    font-size: 20px;
+    font-weight: bold;
+}
+.contents .tc img{
+    width:1000px;
+}
+
+/*----------------------^^Box CSS ----------------------------*/
+.box1 .ph-area{
+    width:100%;
+    display: flex;
+    justify-content: space-around; /* 子要素を均等に配置します */
+    align-items: 0 auto; /* 子要素を縦方向の中心に揃えます */
+}
+
+.box1 .ph-area img{
+    margin-top:0;
+    max-width: 33%;/* 画像の最大幅を設定します */
+    height: auto; /* 画像の縦横比を維持します */
+
+}
+.box1{
+    width:1200px;
+    margin:0 auto;
+    /* position: relative; */
+
+}
+.box1 >.txt-area> P{
+    font-size: 80px;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: -0.05em;
+    line-height: .75;
+    text-align: center;
+}
+.box1 .txt-area p{
+    margin: 0;
+    font-size: 30px;
+}
+
+
+.contents2{
+    width:100%;
+    margin:0 auto;
+}
+.link1{
+    width:100%;
+    margin:0 auto;
+}
+
+.link1 table{
+    width:100%;
+    margin:0 auto;
+    background-color: white;
+    border-collapse: separate;
+}
+
+.link1 table tr td{
+    margin:0 auto;
+    width:50%;
+    height:100%;
+    overflow: hidden;
+    position: relative;
+
+    /* height:330px; */
+}
+
+.link1 table td img{
+    display: block;
+    width:100%;
+    height:100%;
+}
+
+.item{
+    /* position:relative; */
+    width:100%;
+    height:100%;
+}
+.ph{
+    position: absolute;
+    top:0px;
+    left:0px;
+
+
+}
+.acc {
+    position: absolute;
+    top:0px;
+    left:0px;
+}
+.link1 .item .ttl{
+    position: absolute;
+    top:20px;
+    left:45px;
+    color:white;
+}
+.item .en {
+    display: block;                  /* または inline-block */
+    line-height: 0.9;
+    text-align: left;
+}
+.item .ja {
+    display: block;                  /* または inline-block */
+    line-height: 3;
+    text-align: left;
+}
+.link1 .item .txt{
+    position:absolute;
+    right:45px;
+    bottom:20px;
+    color:rgb(255, 255, 255);
+
+}
+.item a{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height:330px;
+    /* background-color: antiquewhite; */
+
+}
+
+
+.item h3{
+    z-index: 1;
+}
+.item p{
+    z-index:1;
+}
+/* .item a::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    background-color: rgba(0, 93, 136, .5);
+    backdrop-filter: blur(8px);
+    z-index: 0;
+    opacity:0;
+    transition: opacity .5s ease;
+} */
+/* .item a:hover:after{
+    opacity:0.9;
+
+} */
+/* Room Type----------end--------------- */
+.facility{
+    display: flex;
+    justify-content: center;
+    padding:40px 40px 0;
+    gap:14px;
+
+
+}
+
+.facility .icon{
+    width:60px;
+    height:60px;
+    border-radius:50%;      /* 完全な円にする */
+    object-fit:cover;       /* 画像の切り抜き調整 */
+    border:4px solid #d0d4d9; /* 白い枠 */
+    box-shadow:0 4px 10px rgba(0,0,0,0.12);
+    margin-bottom:5px;
+    margin:0 auto 5px auto;
+    display: block;
+    mask-size:contain;
+    mask-position:center;
+    mask-repeat:no-repeat;
+
+
+}
+/* .icon{
+    display:block;
+    mask-size:contain;
+    mask-position:center;
+    mask-repeat:no-repeat;
+} */
+.facility .icon img{
+    display:flex;
+    width:30px;
+    height:30px;
+    margin:20% auto;
+}
+
+.contents{
+    width:1000px;
+    margin:20px auto;
+
+}
+.contents-inner{
+    margin-top:60px;
+    padding: 40px 0;
+}
+
+.bg1{
+    background-color: rgba(33, 13, 89, .1);
+    background-image: radial-gradient(at 53% 98%, rgba(86, 32, 167, 0.1) 0px, transparent 50%), radial-gradient(at 52% 1%, rgba(32, 93, 172, 0.1) 0px, transparent 50%), radial-gradient(at 53% 52%, rgba(55, 68, 164, 0.1) 0px, transparent 50%), radial-gradient(at 99% 98%, rgba(179, 42, 213, 0.1) 0px, transparent 50%), radial-gradient(at 1% 98%, rgba(34, 13, 89, 0.1) 0px, transparent 50%), radial-gradient(at 99% 2%, rgba(25, 182, 225, 0.1) 0px, transparent 50%), radial-gradient(at 0% 0%, rgba(17, 42, 100, 0.1) 0px, transparent 50%);
+}
+.bg1 .btn-area  a{
+    position: absolute;
+    /* bottom: -25px; */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #005d88;
+    padding: 14px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.5;
+    transition: #85b1c5 .5s ease-out;
+
+    width: 320px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-area::after {
+    content: "";
+    background-image: url(https://img.travel.rakuten.co.jp/share/image_up/184636/LARGE/8344152….47.9.26.3.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-left: 6px;
+}
+.bg3{
+    background-color: #13283f;
+}
+.inner2-map{
+    margin-bottom: 40px;
+}
+.white{
+    color:white;
+}
+.mb70{
+    color:white;
+    padding-bottom:20px;
+}
+.box2{
+    width:900px;
+    padding: 20px 0px;
+    display: flex;
+    gap: 2px;
+    margin:0 auto;
+}
+.box2>.contents_area{
+    width: 50%;
+    padding: 40px 10px;
+    background-color: #fff;
+}
+.box2>.contents_area .table1 {
+    font-size: 14px;
+    width:100%;
+}
+.box2>.contents_area .table1 th {
+    text-align: left;
+    white-space: nowrap;
+    font-weight: bold;
+    color: #13283f;
+}
+.box2>.contents_area .table1 th, .table1 td {
+    line-height: 1.5;
+    padding: 18px;
+    border-top: solid 1px #d4d4d4;
+    border-bottom: solid 1px #d4d4d4;
+}
+.box2>.contents_area table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+}
+.box2>.ph_area{
+    width:50%;
+    background-color: #fff;
+}
+
+.box2>.ph_area .BF-photo{
+    display: flex;
+    flex-wrap: wrap; /* 項目を折り返して2行にする */
+    justify-content: center; /* 画像を中央揃えにする */
+    margin:1%;
+}
+.box2>.ph_area .BF-photo img{
+    width: 48%; /* 1行に2枚表示するために幅を調整 */
+    margin: 1%;
+}
+    .box2>.ph_area .facility img{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.box2 .facility-box .facility img{
+    width:30px;
+    height:30px;
+}
+.box2 table{
+    margin-top:20px;
+}
+.box2 table{
+    border-collapse: collapse;
+    border-color: rgb(199, 13, 13);
+    border-width:5px;
+    border:5px;
+}
+.box2  table td{
+    width:50%;
+    text-align: center;
+    padding:10px;
+
+
+}
+.contents2{
+    padding:70px 0;
+    width:1000px;
+    margin:0 auto;
+    /* background-color: rgb(198, 212, 212); */
+}
+.contents2 span{
+    text-align: center;
+    display:block;
+}
+.contents2 .ttl1 .en::first-letter{
+    color:red;
+}
+.box3{
+    display: flex;
+    flex-wrap:wrap;
+    gap:20px 10px;
+
+
+}
+.box3 .item{
+    width: calc(25% - 8px);
+    background-color: #f4f4f4;
+    height:100%;
+
+
+}
+.itemh1{
+    height:330px;
+}
+.itemh2{
+    height:350px;
+}
+.box3 .item img{
+    vertical-align: middle;
+    border: none;
+    max-width: 100%;
+    margin:0 auto;
+    height:186px;
+    overflow: hidden;
+
+
+}
+.box3>.item>.img-area{
+    position: relative;
+
+}
+.box3>.item>.img-area>.img-area-ttl {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    font-family: Roboto, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: -0.05em;
+    line-height: .85;
+
+}
+/* .box3>.item>.img-area>.img-area-ttl> img{
+    vertical-align: middle;
+    border: none;
+    max-width: 100%;
+}  */
+.box3>.item>.caption {
+    padding: 16px 12px;
+    position:relative;
+}
+.box3>.item>.caption>.ttl {
+    font-size: 16px;
+    font-weight: bold;
+    color: #13283f;
+    letter-spacing: .05em;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.box3>.item>.caption>.txt {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.mb{
+    margin:10px;
+}
+.txt1 {
+    font-size: 14px;
+    line-height: 2;
+    text-align: center;
+    margin:20px 0;
+}
+.ttl2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #13283f;
+    letter-spacing: .05em;
+    line-height: 1.75;
+}
+.customizeView >.footer {
+    position: relative;
+    /* background-image: url(https://tla-bi.github.io/TKSK/Footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: #13283f;
+    margin-bottom: 40px;
+    width:100%;
+}
+.customizeView >.footer::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .2);
+    /* background-image: radial-gradient(rgba(0, 0, 0, 0.3) 30%, transparent 31%), radial-gradient(rgba(0, 0, 0, 0.3) 30%, transparent 31%); */
+    background-size: 4px 4px;
+    background-position: 0 0, 2px 2px;
+    z-index: 1;
+}
+.customizeView >.footer>.contents {
+    position: relative;
+    padding: 80px 0px;
+    text-align: center;
+    color:white;
+    z-index: 2;
+    width:100%;
+}
+.customizeView >.footer>.contents>p {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 3;
+}
+.customizeView >.footer>.contents>.mb10 {
+    width:100%
+}
+.reserve {
+    position: fixed;
+    right: 0;
+    top:550px;
+    width: 50px;
+
+    z-index: 20;
+
+}
+.reserve>.stay-btn {
+    width: 100%;
+    background-color: #eb585b;
+    color: #fff;
+    /* padding: 20px; */
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+
+    position: absolute;
+    right: 50%;
+    height:200px;
+
+}
+.vertical{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    position:relative;
+    top: 30px;
+}
+.reserve>.stay-btn:hover {
+    background-color: #ee2428;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color .5s ease-out;
+}
+/* .reserve>.air-btn {
+    width: 50%;
+    background-color: #337da0;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color .5s ease-out;
+}
+.reserve>.air-btn:hover {
+    background-color: #057da9;
+    color: #fff;
+    text-decoration: none;
+} */
