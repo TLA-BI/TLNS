@@ -250,7 +250,8 @@
     right:45px;
     bottom:20px;
     color:rgb(255, 255, 255);
-
+    font-weight: bold;
+    color:#424343;
 }
 .item a{
     text-decoration: none;
@@ -540,6 +541,7 @@
 .box3>.item>.caption>.txt {
     font-size: 12px;
     margin-bottom: 5px;
+
 }
 .mb{
     margin:10px;
